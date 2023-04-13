@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(61, 1, 141);
+}
+
+#login {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  height: 610px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+  overflow: hidden;
+}
+
+#imagem {
+  display: block;
+  background: black url('../imagens/pexels-pixabay-207518.jpg') center center no-repeat;
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+}
+
+#formulario {
+  display: block;
+  padding: 10px;
+}
+
+#formulario > h1 {
+  text-align: center;
+}
+
+#formulario > p {
+  margin-top: 10px;
+  font-size: .9em;
+}
+
+form {
+  margin-top: 10px;
+}
+
+form > div {
+  background-color:rgb(61, 1, 141);
+  border-radius: 8px;
+  margin: 5px 0px;
+  height: 40px;
+}
+
+form > div > label {
+  display: none;
+}
+
+.material-icons {
+  color: white;
+  transform: translate(3px, 3px);
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+input[type='email'] {
+  width: calc(100% - 40px);
+  transform: translateY(-3px);
+  height: 38px;
+  border-radius: 6px;
+  border: none;
+  background-color: #dcdcdc;
+  padding-left: 10px;
+}
+
+input[type='password'] {
+  width: calc(100% - 40px);
+  transform: translateY(-4px);
+  height: 38px;
+  border-radius: 6px;
+  border: none;
+  background-color: #dcdcdc;
+  padding-left: 10px;
+}
+
+input[type='email']:focus-within {
+  background-color: white;
+}
+
+input[type='password']:focus-within {
+  background-color: white;
+}
+
+input[type='submit'] {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color:rgb(61, 1, 141);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color:rgb(45, 0, 104);
+  transition-duration: .3s;
+}
+
+input[type='submit']:active {
+  background-color: black;
+  transition-duration: .1s;
+}
+
+a {
+  display: block;
+  text-align: center;
+  border: 1px solid rgb(45, 0, 104);
+  color:rgb(45, 0, 104);
+  text-decoration: none;
+  height: 40px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+a > .material-icons {
+  color:rgb(45, 0, 104);
+  font-size: .9em;
+  padding: 0px;
+}
+
+a:hover {
+  background-color: rgb(45, 0, 104);
+  color: white;
+  transition-duration: .3s;
+}
+
+a:hover .material-icons {
+  color: white;
+  transition-duration: .3s;
+}
+
+a:active {
+  background-color: black;
+  transition-duration: .1s;
+}
